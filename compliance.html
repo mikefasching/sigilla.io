@@ -94,6 +94,11 @@
     .nav-logo{display:flex;align-items:center;gap:9px;font-family:var(--display);font-size:1.25rem;font-weight:600;color:var(--text);text-decoration:none;letter-spacing:.04em}
     .sigil{width:22px;height:22px;flex-shrink:0}
     .sigil svg{width:100%;height:100%}
+    
+    .nav-links{display:flex;align-items:center;gap:4px;margin-left:8px}
+    .nav-link{font-family:var(--mono);font-size:.68rem;color:var(--muted);text-decoration:none;padding:5px 12px;border-radius:4px;transition:color .2s,background .2s;letter-spacing:.02em}
+    .nav-link:hover{color:var(--text);background:rgba(255,255,255,.05)}
+    .nav-link-active{color:var(--text);background:rgba(255,255,255,.06)}
     .nav-back{font-family:var(--mono);font-size:.68rem;color:var(--muted);text-decoration:none;display:flex;align-items:center;gap:5px;transition:color .2s}
     .nav-back:hover{color:var(--text)}
     .nav-back svg{width:12px;height:12px}
@@ -228,9 +233,11 @@
 <body>
 <nav>
   <div class="nav-left">
-    <a href="index.html" class="nav-back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>Back</a>
     <a href="index.html" class="nav-logo"><div class="sigil"><svg viewBox="0 0 28 28" fill="none"><polygon points="14,2 26,8 26,20 14,26 2,20 2,8" stroke="#C8A96E" stroke-width="1.5" fill="none"/><polygon points="14,6 22,10 22,18 14,22 6,18 6,10" stroke="#C8A96E" stroke-width="0.75" fill="none" opacity="0.45"/><circle cx="14" cy="14" r="2.5" fill="#C8A96E"/></svg></div>Sigilla</a>
-    <span class="nav-tag">For Compliance &amp; IT Security</span>
+    <div class="nav-links">
+      <a href="compliance.html" class="nav-link nav-link-active">Compliance Officers</a>
+      <a href="vendor.html" class="nav-link">Software Vendors</a>
+    </div>
   </div>
   <a href="#cta" class="nav-cta">Request early access</a>
 </nav>
@@ -429,11 +436,13 @@
   <div class="sec-label">Early Access</div>
   <h2>The deadline is real.<br/><em>Be ready.</em></h2>
   <p>We're accepting a limited number of pilot customers for 2026. Three months free in exchange for honest feedback — and one reference call if Sigilla delivers value.</p>
-  <form class="email-form" onsubmit="handleSubmit(event)">
-    <input type="email" id="emailInput" placeholder="your@company.eu" required />
+  <form class="email-form" action="https://formspree.io/f/mdaweglj" method="POST">
+    <input type="email" name="email" placeholder="your@company.eu" required />
+    <input type="hidden" name="_subject" value="Sigilla compliance early access request" />
+    <input type="hidden" name="_next" value="https://sigilla.io/compliance" />
     <button type="submit">Request access</button>
   </form>
-  <p class="form-note" id="formNote">No spam. Personal reply within 48 hours.</p>
+  <p class="form-note">No spam. Personal reply within 48 hours.</p>
   <div class="stats">
     <div class="stat"><div class="n">Aug '26</div><div class="l">EU AI Act deadline</div></div>
     <div class="stat"><div class="n">€35M</div><div class="l">Max non-compliance fine</div></div>
@@ -453,8 +462,7 @@
 </footer>
 <script>
   const ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');ro.unobserve(e.target)}}),{threshold:.1,rootMargin:'0px 0px -50px 0px'});
-  document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
-  function handleSubmit(e){e.preventDefault();const em=document.getElementById('emailInput').value;const note=document.getElementById('formNote');note.textContent=`✓ Got it — we'll reach out to ${em} within 48 hours.`;note.style.color='var(--teal)';document.getElementById('emailInput').value=''}
+  document.querySelectorAll('.reveal').forEach(el=>ro.observe(el)); within 48 hours.`;note.style.color='var(--teal)';document.getElementById('emailInput').value=''}
 </script>
 </body>
 </html>
