@@ -269,6 +269,20 @@
   </div>
 </section>
 
+
+<!-- PILOT BANNER -->
+<section aria-label="Free pilot offer">
+  <div style="background:linear-gradient(90deg,rgba(42,191,163,.08),rgba(42,191,163,.04));border-top:1px solid rgba(42,191,163,.2);border-bottom:1px solid rgba(42,191,163,.2);position:relative;z-index:1">
+    <div style="max-width:1140px;margin:0 auto;padding:20px 5%;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap">
+      <div style="display:flex;align-items:center;gap:14px">
+        <div style="width:8px;height:8px;border-radius:50%;background:var(--teal);animation:pd 2s ease-in-out infinite;flex-shrink:0"></div>
+        <p style="font-size:.875rem;color:var(--text);font-weight:400"><strong style="color:var(--teal)">Free pilot programme open.</strong> Three months free — in exchange for honest feedback and one reference call if Sigilla delivers value.</p>
+      </div>
+      <a href="#cta" style="background:var(--teal);color:var(--bg);padding:9px 22px;border-radius:4px;font-weight:600;font-size:.8rem;text-decoration:none;white-space:nowrap;font-family:var(--body);transition:filter .2s;flex-shrink:0">Apply for pilot →</a>
+    </div>
+  </div>
+</section>
+
 <div class="divider"></div>
 
 <!-- PAIN -->
@@ -290,6 +304,21 @@
 <section id="how" aria-label="How Sigilla works — three steps to compliance"><div class="inner">
   <div class="sec-label">How It Works</div>
   <h2>Three steps to<br/><em>auditor-ready</em> proof.</h2>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:3px;margin-bottom:32px" class="reveal">
+    <div style="background:rgba(42,191,163,.04);border:1px solid rgba(42,191,163,.15);border-radius:6px;padding:24px;text-align:center">
+      <div style="font-family:var(--mono);font-size:.62rem;color:var(--teal);margin-bottom:10px">STEP 01 — IN PLAIN ENGLISH</div>
+      <p style="font-size:.875rem;color:var(--text);line-height:1.75">Your vendor tells Sigilla exactly which servers their AI is allowed to contact. That list is locked in. They cannot add to it later without your approval.</p>
+    </div>
+    <div style="background:rgba(42,191,163,.04);border:1px solid rgba(42,191,163,.15);border-radius:6px;padding:24px;text-align:center">
+      <div style="font-family:var(--mono);font-size:.62rem;color:var(--teal);margin-bottom:10px">STEP 02 — IN PLAIN ENGLISH</div>
+      <p style="font-size:.875rem;color:var(--text);line-height:1.75">Your IT team installs the package in 30 minutes. From that moment, any attempt by the AI to contact an unlisted server is automatically blocked and logged. You don't have to do anything.</p>
+    </div>
+    <div style="background:rgba(42,191,163,.04);border:1px solid rgba(42,191,163,.15);border-radius:6px;padding:24px;text-align:center">
+      <div style="font-family:var(--mono);font-size:.62rem;color:var(--teal);margin-bottom:10px">STEP 03 — IN PLAIN ENGLISH</div>
+      <p style="font-size:.875rem;color:var(--text);line-height:1.75">When your auditor asks for evidence, you open the Sigilla dashboard, click Generate Report, and hand them a signed PDF. They can verify it themselves. The audit takes minutes, not weeks.</p>
+    </div>
+  </div>
+  <p style="font-family:var(--mono);font-size:.7rem;color:var(--muted);margin-bottom:32px;text-align:center">Technical detail below — for your IT team</p>
   <div class="steps reveal">
     <div class="step">
       <div class="step-n">01</div>
@@ -329,6 +358,90 @@
 </div></section>
 
 <div class="divider"></div>
+
+<!-- VENDOR CONVERSATION -->
+<section aria-label="What to ask your vendor about Sigilla"><div class="inner">
+  <div class="sec-label">The Vendor Conversation</div>
+  <h2>What to ask your vendor.<br/><em>Word for word.</em></h2>
+  <p class="sec-sub">The hardest part is often knowing how to start the conversation. Here's exactly what to say — and what to expect back.</p>
+
+  <div style="display:flex;flex-direction:column;gap:3px;margin-top:48px" class="reveal">
+
+    <div style="background:var(--bg2);border:1px solid var(--border);border-radius:6px;overflow:hidden">
+      <div style="background:var(--bg3);padding:12px 24px;border-bottom:1px solid var(--border);font-family:var(--mono);font-size:.64rem;color:var(--teal);letter-spacing:.08em">YOU ASK</div>
+      <div style="padding:20px 24px;font-size:.9rem;color:var(--text);line-height:1.75">"We need to demonstrate to our ISO 27001 auditor that your application does not exfiltrate data from our network. Can you provide a Sigilla-compatible deployment package that declares all network destinations your application requires?"</div>
+    </div>
+
+    <div style="background:var(--bg2);border:1px solid var(--border);border-radius:6px;overflow:hidden">
+      <div style="background:var(--bg3);padding:12px 24px;border-bottom:1px solid var(--border);font-family:var(--mono);font-size:.64rem;color:var(--teal);letter-spacing:.08em">IF THEY SAY YES</div>
+      <div style="padding:20px 24px;font-size:.875rem;color:var(--muted);line-height:1.75">They send you a <code style="font-family:var(--mono);color:var(--teal);font-size:.82rem;background:rgba(42,191,163,.07);padding:2px 6px;border-radius:3px">.sigilla</code> package file. Your IT team drops it into the Sigilla dashboard. Network isolation is active within 30 minutes. You have compliance evidence from day one.</div>
+    </div>
+
+    <div style="background:var(--bg2);border:1px solid var(--border);border-radius:6px;overflow:hidden">
+      <div style="background:var(--bg3);padding:12px 24px;border-bottom:1px solid var(--border);font-family:var(--mono);font-size:.64rem;color:var(--amber);letter-spacing:.08em">IF THEY SAY THEY DON'T KNOW SIGILLA</div>
+      <div style="padding:20px 24px;font-size:.875rem;color:var(--muted);line-height:1.75">Forward them <a href="vendor.html" style="color:var(--teal);text-decoration:none">sigilla.io/vendor</a>. The packaging process takes them half a day. You can also <a href="#cta" style="color:var(--teal);text-decoration:none">contact us</a> — we'll reach out to them directly on your behalf.</div>
+    </div>
+
+    <div style="background:var(--bg2);border:1px solid var(--border);border-radius:6px;overflow:hidden">
+      <div style="background:var(--bg3);padding:12px 24px;border-bottom:1px solid var(--border);font-family:var(--mono);font-size:.64rem;color:var(--red);letter-spacing:.08em">IF THEY REFUSE OR PUSH BACK</div>
+      <div style="padding:20px 24px;font-size:.875rem;color:var(--muted);line-height:1.75">A vendor who refuses to declare their network destinations is a vendor who cannot prove their application is safe. That refusal is itself a significant finding for your risk register — and worth escalating before the EU AI Act deadline.</div>
+    </div>
+
+  </div>
+</div></section>
+
+<div class="divider"></div>
+
+<!-- INFRASTRUCTURE -->
+<section aria-label="What your IT team needs to run Sigilla"><div class="inner">
+  <div class="sec-label">For Your IT Team</div>
+  <h2>What you need<br/>to <em>run this.</em></h2>
+  <p class="sec-sub">No new hardware. No cloud account. No specialist Linux knowledge beyond what your IT team already has.</p>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:48px" class="reveal">
+    <div style="background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:36px">
+      <div style="font-family:var(--mono);font-size:.65rem;color:var(--teal);margin-bottom:20px;letter-spacing:.1em">REQUIREMENTS</div>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:14px">
+        <li style="display:grid;grid-template-columns:140px 1fr;gap:12px;font-size:.875rem">
+          <span style="font-family:var(--mono);color:var(--muted);font-size:.75rem">Operating system</span>
+          <span style="color:var(--text)">Ubuntu 22.04 LTS (standard server)</span>
+        </li>
+        <li style="display:grid;grid-template-columns:140px 1fr;gap:12px;font-size:.875rem">
+          <span style="font-family:var(--mono);color:var(--muted);font-size:.75rem">CPU / RAM</span>
+          <span style="color:var(--text)">Standard x86 server — no GPU required</span>
+        </li>
+        <li style="display:grid;grid-template-columns:140px 1fr;gap:12px;font-size:.875rem">
+          <span style="font-family:var(--mono);color:var(--muted);font-size:.75rem">Network</span>
+          <span style="color:var(--text)">Internal network access only — air-gap capable</span>
+        </li>
+        <li style="display:grid;grid-template-columns:140px 1fr;gap:12px;font-size:.875rem">
+          <span style="font-family:var(--mono);color:var(--muted);font-size:.75rem">Internet</span>
+          <span style="color:var(--text)">Not required — works fully offline</span>
+        </li>
+        <li style="display:grid;grid-template-columns:140px 1fr;gap:12px;font-size:.875rem">
+          <span style="font-family:var(--mono);color:var(--muted);font-size:.75rem">Installation</span>
+          <span style="color:var(--text)">~30 minutes per vendor application</span>
+        </li>
+        <li style="display:grid;grid-template-columns:140px 1fr;gap:12px;font-size:.875rem">
+          <span style="font-family:var(--mono);color:var(--muted);font-size:.75rem">Ongoing work</span>
+          <span style="color:var(--text)">Dashboard review + update approvals only</span>
+        </li>
+      </ul>
+    </div>
+    <div style="background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:36px">
+      <div style="font-family:var(--mono);font-size:.65rem;color:var(--teal);margin-bottom:20px;letter-spacing:.1em">WHAT IT DOES NOT REQUIRE</div>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:14px">
+        <li style="display:flex;gap:10px;font-size:.875rem;color:var(--muted)"><span style="color:var(--teal);font-family:var(--mono);flex-shrink:0">✓</span>No cloud subscription or SaaS account</li>
+        <li style="display:flex;gap:10px;font-size:.875rem;color:var(--muted)"><span style="color:var(--teal);font-family:var(--mono);flex-shrink:0">✓</span>No GPU or specialised hardware</li>
+        <li style="display:flex;gap:10px;font-size:.875rem;color:var(--muted)"><span style="color:var(--teal);font-family:var(--mono);flex-shrink:0">✓</span>No changes to your existing infrastructure</li>
+        <li style="display:flex;gap:10px;font-size:.875rem;color:var(--muted)"><span style="color:var(--teal);font-family:var(--mono);flex-shrink:0">✓</span>No data sent to Sigilla servers</li>
+        <li style="display:flex;gap:10px;font-size:.875rem;color:var(--muted)"><span style="color:var(--teal);font-family:var(--mono);flex-shrink:0">✓</span>No vendor-specific IT expertise</li>
+        <li style="display:flex;gap:10px;font-size:.875rem;color:var(--muted)"><span style="color:var(--teal);font-family:var(--mono);flex-shrink:0">✓</span>No ongoing maintenance beyond update approvals</li>
+      </ul>
+      <div style="margin-top:24px;padding:14px 16px;background:rgba(42,191,163,.05);border:1px solid rgba(42,191,163,.12);border-radius:4px;font-size:.8rem;color:var(--muted);line-height:1.7">If your team can run a Docker container on a Linux server, they can run Sigilla.</div>
+    </div>
+  </div>
+</div></section>
 
 <!-- REGS -->
 <section class="reg-strip" aria-label="EU AI Act, GDPR, NIS2 and ISO 27001 regulatory context"><div class="inner-sm">
@@ -433,9 +546,9 @@
 
 <!-- CTA -->
 <section id="cta" aria-label="Request early access to Sigilla"><div class="cta-wrap">
-  <div class="sec-label">Early Access</div>
-  <h2>The deadline is real.<br/><em>Be ready.</em></h2>
-  <p>We're accepting a limited number of pilot customers for 2026. Three months free in exchange for honest feedback — and one reference call if Sigilla delivers value.</p>
+  <div class="sec-label">Free Pilot Programme</div>
+  <h2>Three months free.<br/><em>No commitment.</em></h2>
+  <p>We're accepting a small number of pilot customers for 2026. Free access in exchange for honest feedback — and one reference call if Sigilla delivers real value. The EU AI Act deadline is August 2026. Starting now gives you time to get it right.</p>
   <form class="email-form" action="https://formspree.io/f/mdaweglj" method="POST">
     <input type="email" name="email" placeholder="your@company.eu" required />
     <input type="hidden" name="_subject" value="Sigilla compliance early access request" />
