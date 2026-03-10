@@ -156,48 +156,79 @@
 </nav>
 
 <main role="main" aria-label="Sigilla homepage — choose your path">
+
   <div class="eyebrow"><div class="pulse"></div>EU AI Act enforcement: <time datetime="2026-08-02">August 2026</time></div>
   <h1>The seal that proves your<br/>vendor's AI <em>stayed put.</em></h1>
-  <p class="sub">Sigilla enforces what third-party AI applications are allowed to do on your infrastructure — and generates cryptographic proof for your auditor.</p>
-  <div class="question">Who are you?</div>
+
+  <!-- ONE-LINE EXPLAINER -->
+  <p class="sub">Sigilla sits between your infrastructure and your vendor's AI — enforcing what it's allowed to do at the kernel level, and generating cryptographic proof for your auditor. No cloud. No trust required.</p>
+
+  <!-- CREDIBILITY -->
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:48px;flex-wrap:wrap;justify-content:center">
+    <div style="display:flex;align-items:center;gap:7px;font-size:.75rem;color:var(--muted)">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      Built by AI governance researchers
+    </div>
+    <span style="color:var(--border)">·</span>
+    <div style="display:flex;align-items:center;gap:7px;font-size:.75rem;color:var(--muted)">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      Targeting EU AI Act August 2026 deadline
+    </div>
+    <span style="color:var(--border)">·</span>
+    <div style="display:flex;align-items:center;gap:7px;font-size:.75rem;color:var(--muted)">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Europe
+    </div>
+  </div>
+
+  <!-- AUDIENCE BRIDGE -->
+  <div class="question">Two audiences. Pick yours.</div>
+
   <div class="cards" role="list" aria-label="Audience paths">
     <a href="compliance.html" class="card compliance">
       <span class="card-tag">Compliance Officer · IT Security · CISO</span>
       <h2>I need to prove our vendor's AI is contained.</h2>
-      <p>You have a third-party AI on your infrastructure. Your ISO 27001 auditor is asking for evidence. The EU AI Act deadline is real. You have no answers yet.</p>
+      <p>A third-party AI is running on your infrastructure. Your auditor wants evidence it isn't exfiltrating data. You don't have a credible answer yet — and the EU AI Act deadline is August 2026.</p>
       <ul class="card-points">
-        <li>See every network connection your vendor's AI makes</li>
-        <li>Generate compliance reports in 60 seconds</li>
-        <li>Cryptographic proof of data sovereignty</li>
-        <li>EU AI Act audit evidence — automatic</li>
+        <li>Know exactly what your vendor's AI contacts on your network — in real time</li>
+        <li>Answer your auditor in 60 seconds, not 40 hours</li>
+        <li>Prove data never left your infrastructure — cryptographically</li>
+        <li>EU AI Act human oversight evidence — generated automatically</li>
       </ul>
-      <span class="card-cta">Show me the compliance story <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      <span class="card-cta">Read the compliance story <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
     </a>
     <a href="vendor.html" class="card vendor">
       <span class="card-tag">Software Vendor · AI Developer · CTO</span>
       <h2>I'm losing deals because I can't deploy on-premise.</h2>
-      <p>Every enterprise deal that requires on-premise deployment is a deal you lose — or a bespoke engineering project that costs more than it's worth.</p>
+      <p>Every enterprise prospect who says "on-premise only" is a deal you walk away from. Bespoke deployments cost more than they're worth. There's no repeatable story. Sigilla fixes that in one afternoon.</p>
       <ul class="card-points">
-        <li>Package your app once — deploy anywhere</li>
-        <li>Your customer gets compliance evidence automatically</li>
-        <li>Close deals you're currently walking away from</li>
-        <li>No bespoke deployment per customer</li>
+        <li>Close the on-premise deal instead of losing it</li>
+        <li>Package once — the same file deploys at every customer site</li>
+        <li>Your customer's compliance evidence generates automatically</li>
+        <li>One closed deal covers the cost sixteen times over</li>
       </ul>
-      <span class="card-cta">Show me the vendor story <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      <span class="card-cta">Read the vendor story <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
     </a>
   </div>
+
+  <!-- OUTCOME STRIP — replaced technical features with plain outcomes -->
   <div class="shared">
-    <span class="sf">Air-gap capable</span>
-    <span class="sf">Kernel-level enforcement</span>
-    <span class="sf">Independently verifiable</span>
-    <span class="sf">No cloud required</span>
+    <span class="sf">Works fully offline</span>
+    <span class="sf">Cannot be bypassed by the vendor</span>
+    <span class="sf">Auditor verifies independently</span>
+    <span class="sf">Deploys in 30 minutes</span>
     <span class="sf">EU AI Act ready</span>
   </div>
 
-  <div style="margin-top:32px;max-width:600px;padding:16px 24px;background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:6px;font-family:var(--mono);font-size:.68rem;color:var(--muted);line-height:1.8;text-align:left">
+  <!-- SCOPE NOTE -->
+  <div style="margin-top:28px;max-width:600px;padding:16px 24px;background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:6px;font-family:var(--mono);font-size:.68rem;color:var(--muted);line-height:1.8;text-align:left">
     <span style="color:var(--seal)">Scope note:</span> Sigilla today supports contained AI applications with fixed, declarable network destinations — predictive maintenance, quality inspection, forecasting, and similar. Agentic AI and large local models (&gt;70B) are on the roadmap. Not sure if your use case fits? <a href="compliance.html#cta" style="color:var(--seal);text-decoration:none">Ask us →</a>
   </div>
-  <nav aria-label="Footer navigation" style="display:flex;gap:20px;justify-content:center;margin-top:8px"><a href="compliance.html" style="font-family:var(--mono);font-size:.68rem;color:var(--muted);text-decoration:none">For Compliance</a><a href="vendor.html" style="font-family:var(--mono);font-size:.68rem;color:var(--muted);text-decoration:none">For Vendors</a></nav>
+
+  <nav aria-label="Footer navigation" style="display:flex;gap:20px;justify-content:center;margin-top:12px">
+    <a href="compliance.html" style="font-family:var(--mono);font-size:.68rem;color:var(--muted);text-decoration:none">For Compliance Officers</a>
+    <a href="vendor.html" style="font-family:var(--mono);font-size:.68rem;color:var(--muted);text-decoration:none">For Software Vendors</a>
+  </nav>
   <div class="bottom-note">sigilla.io · Built for regulated Europe</div>
 </main>
 </body>
